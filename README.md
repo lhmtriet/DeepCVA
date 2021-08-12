@@ -6,7 +6,7 @@ The package contains the following artefacts:
 
 The dataset of 1,229 VCCs we gathered are given in `data/java_vccs.csv`, respectively.
 
-Before running any code, please install all the required Python packages using the following command: pip install -r requirements.txt
+Before running any code, please install all the required Python packages using the following command: `pip install -r requirements.txt`
 
 ## Feature Generation and Baseline Models
 1. Train and infer the code features by running `infer_features/infer_pipeline.sh`.
