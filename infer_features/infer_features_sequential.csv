@@ -1,0 +1,12 @@
+binary,code,hunk,word
+binary,code,ss,word
+binary,code,hc,word
+multiclass,code,hunk,word
+multiclass,code,ss,word
+multiclass,code,hc,word
+binary,ast,hunk,word
+binary,ast,ss,word
+binary,ast,hc,word
+multiclass,ast,hunk,word
+multiclass,ast,ss,word
+multiclass,ast,hc,word

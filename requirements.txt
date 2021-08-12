@@ -1,0 +1,12 @@
+pandas
+numpy
+PyGithub
+progressbar2
+whatthepatch
+uuid
+chardet
+scikit-learn
+tqdm
+gensim
+keras-gpu
+imbalanced-learn
