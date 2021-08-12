@@ -19,6 +19,8 @@ Before running any code, please install all the required Python packages using t
 2. The DeepCVA model used in the paper can be trained by running `DeepCVA/multi_task_sequential_crnn.sh`. The variants of DeepCVA (in RQ2) can be obtained from the original DeepCVA model by removing respective components based on the descriptions in the paper.
 
 ## 84 software metrics used for baseline models:
+
 27 Change/project/developer metrics: No. of project stars, no. of project forks, no. of commits, no. of hunks, entropy (distribution of modified code across each file), no. of modified files, no. of modified directories, no. of modified subsystems, no. of lines added/deleted, no. of lines in file before the change, whether or not the change is a defect fix, no. of developers changed modified files, time between current and last change, unique changes to modified files, developer's experience, recent developer's experience, developer's experience on a subsystem, no. of added/deleted conditions, no. of added/modified/deleted functions, no. of added/deleted function calls, no. of added/deleted variable assignments
+
 57 Java keywords: abstract, assert, boolean, break, byte, case, catch, char, class, continue, const, default, do, double, else, enum, exports, extends, false, final, finally, float, for, goto, if, implements, import, instanceof, int, interface, long, module, native, new, null, package, private, protected, public, requires, return, short, static, strictfp, super, switch, synchronized, this, throw, throws, transient, true, try, var, void, volatile, while
 
