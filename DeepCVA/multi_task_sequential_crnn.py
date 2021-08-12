@@ -538,7 +538,6 @@ for val_partition in val_partitions:
 
 	map_df = pd.read_csv(mapping_file)
 	map_df.columns = map_df.columns.str.lower()
-	map_df = map_df.loc[map_df['cvss2_accessvect'] != 'ADJACENT_NETWORK']
 
 	raw_data_path = data_path + 'inferred_features_time/seq_' + feature_type + '_' + feature_scope + '_' + token + '_' + \
 					'multiclass' + '_' + val_partition + '.pkl'
