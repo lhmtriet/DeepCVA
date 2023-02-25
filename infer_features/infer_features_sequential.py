@@ -6,7 +6,6 @@ data_path = '../'
 feature_path = '../'
 
 commit_column = 'commit'
-cwe_column = 'cwe'
 index_col = 'index_col'
 
 total_len = []
@@ -195,10 +194,10 @@ def generate_data(val_partitions, argv=None):
 
 		if val_partition == 'holdout':
 			map_column = 'set'
-			train_commits = map_df.loc[map_df[map_column] == 'train'][[commit_column, cwe_column]].set_index(commit_column)
+			train_commits = map_df.loc[map_df[map_column] == 'train'][commit_column].set_index(commit_column)
 		elif val_partition == 'train_holdout':
 			map_column = 'set'
-			train_commits = map_df.loc[(map_df[map_column] == 'train') | (map_df[map_column] == 'val')][[commit_column, cwe_column]].set_index(commit_column)  
+			train_commits = map_df.loc[(map_df[map_column] == 'train') | (map_df[map_column] == 'val')][commit_column].set_index(commit_column)  
 		else:
 			print(map_df.columns, val_partition)
 			map_column = 'time_partition'
@@ -208,7 +207,7 @@ def generate_data(val_partitions, argv=None):
 
 			train_indices = [num for num in fold_indices if num <= int(val_partition)]
 
-			train_commits = map_df.loc[map_df[map_column].isin(train_indices)][[commit_column, cwe_column]].set_index(
+			train_commits = map_df.loc[map_df[map_column].isin(train_indices)][commit_column].set_index(
 				commit_column)
 
 		train_files = file_data.join(train_commits, how='inner', on=commit_column)
